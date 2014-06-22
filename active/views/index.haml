@@ -1,0 +1,74 @@
+﻿!!!
+%html{:lang=>"en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %title You Sheet
+    / Favicon
+    %link{:href=>"http://localhost:3001/images/yousheet.ico",:rel=>"icon"}
+    / Fonts
+    %link{:href=>"http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css",:rel=>"stylesheet"}
+    %link{:href=>"http://fonts.googleapis.com/css?family=Open+Sans:400,300,700",:rel=>"stylesheet"}
+    / Bootstrap
+    %link{:href => "http://localhost:3001/styles/bootstrap.min.css", :rel => "stylesheet"}/
+    / Custom
+    %link{:href => "http://localhost:3001/styles/custom.css", :rel => "stylesheet"}/
+    / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      %script{:src=>"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
+      %script{:src=>"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+  %body
+    %header.navbar.navbar-static-top.bs-docs-nav#top{"role"=>"banner"}
+      %div.container
+        %div.navbar-header
+          %button.navbar-toggle{:type=>"button","data-toggle"=>"collapse","data-target"=>".bs-navbar-collapse"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href=>"/"} You Sheet
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href=>"/sheets"} Sheets
+            %li
+              %a{:href=>"/article"} Article
+            %li
+              %a{:href=>"/about"} About
+            %li
+              %a.search{:href=>"#search"}
+            %input.form-control{:type=>"text",:placeholder=>"Search on You Sheet..."}
+    %div.mainbox
+      %div.mainContent
+        %h1.title.inner Creat your sheet freely
+        %h2.subtitle
+          %span.inner Post your recommended materials
+          %br
+          %span.inner to share them with friends,
+          %br
+          %span.inner fans and followers everywhere
+        %button.create{"tabindex"=>"0"} Create Your Sheet
+    %footer.bs-docs-footer{"role"=>"contentinfo"}
+      %div.container
+        %ul.bs-docs-footer-links.muted
+          %li Currently v0.0.1
+          %li 
+            ·
+          %li
+            %a{:href=>""} GitHub
+          %li 
+            ·
+          %li
+            %a{:href=>""} Contact
+    %div.new +
+    / jQuery (necessary for Bootstrap's JavaScript plugins)
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    / Include all compiled plugins (below), or include individual files as needed
+    %script{:src => "http://localhost:3001/scripts/bootstrap.min.js"}
+    / AngularJS
+    %script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"}
+    / Socket.io
+    %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js"}
+    / main.js
+    %script{:src => "http://localhost:3001/scripts/main.js"}
